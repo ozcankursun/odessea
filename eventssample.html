@@ -34,9 +34,9 @@
             var attVenue = document.getElementById("attVenue").value;
             var attTicket = document.getElementById("attTicket").value;
             var attendee = {
-                fullName: attFullname,
-                startingDate: attStartingDate,
-                endingDate: attEndingDate,
+                name: attFullname,
+                startingdate: attStartingDate,
+                endingdate: attEndingDate,
                 venue: attVenue,
                 ticket: attTicket,
             };
@@ -61,15 +61,15 @@
                 var row = document.createElement("tr");
 
                 var cell = document.createElement("td");
-                cell.innerHTML = attendees[i].fullName;
+                cell.innerHTML = attendees[i].name;
                 row.appendChild(cell);
 
                 cell = document.createElement("td");
-                cell.innerHTML = attendees[i].startingDate;
+                cell.innerHTML = attendees[i].startingdate;
                 row.appendChild(cell);
 
                 cell = document.createElement("td");
-                cell.innerHTML = attendees[i].endingDate;
+                cell.innerHTML = attendees[i].endingdate;
                 row.appendChild(cell);
 
                 cell = document.createElement("td");
