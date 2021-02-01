@@ -32,9 +32,9 @@
             var attFullAddress = document.getElementById("attFullAddress").value;
             var attEmail = document.getElementById("attEmail").value;
             var attendee = {
-                fullName: attFullname,
+                name: attFullname,
                 fulladdress: attFullAddress,
-                email: attEmail,
+                contactemail: attEmail,
             };
             attendees.push(attendee);
         }
@@ -55,7 +55,7 @@
                 var row = document.createElement("tr");
 
                 var cell = document.createElement("td");
-                cell.innerHTML = attendees[i].fullName;
+                cell.innerHTML = attendees[i].name;
                 row.appendChild(cell);
 
                 cell = document.createElement("td");
@@ -63,7 +63,7 @@
                 row.appendChild(cell);
 
                 cell = document.createElement("td");
-                cell.innerHTML = attendees[i].email;
+                cell.innerHTML = attendees[i].contactemail;
                 row.appendChild(cell);
 
                 body.appendChild(row);

@@ -33,7 +33,7 @@
             var attExperience = document.getElementById("attExperience").value;
             var attEmail = document.getElementById("attEmail").value;
             var attendee = {
-                fullName: attFullname,
+                fullname: attFullname,
                 company: attCompany,
                 experience: attExperience,
                 email: attEmail,
@@ -58,7 +58,7 @@
                 var row = document.createElement("tr");
 
                 var cell = document.createElement("td");
-                cell.innerHTML = attendees[i].fullName;
+                cell.innerHTML = attendees[i].fullname;
                 row.appendChild(cell);
 
                 cell = document.createElement("td");
@@ -191,7 +191,7 @@
 
         </div>
         <script>
-            
+
                 window.setTimeout(() => {
                 document.getElementById("adv-section").hidden = true;
                 document.getElementById("data-section").hidden = false;
