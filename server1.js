@@ -25,7 +25,7 @@ http.createServer(function (req, resp) {
             console.log(results.rows);
             // iterate results.rows array and fill the attendees array
             results.rows.forEach((item, index) => { attendees.push(item); });
-            // console.log("returning: " + JSON.stringify(attendees));
+             // console.log("returning: " + JSON.stringify(attendees));
             resp.writeHead(200, {
                 "Content-Type": "text/json",
                 "Access-Control-Allow-Origin": "*"
